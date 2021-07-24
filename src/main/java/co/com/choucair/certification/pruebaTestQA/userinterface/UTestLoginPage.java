@@ -1,11 +1,10 @@
 package co.com.choucair.certification.pruebaTestQA.userinterface;
 
-import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class UTestLoginPage extends PageObject {
-    public static final Target LOGIN_BUTTON = Target.
+public class UTestLoginPage  {
+    public static final Target JOIN_BUTTON = Target.
             the("button that shows us the form to login").
             located(By.xpath("/html/body/ui-view/unauthenticated-container/div/div/unauthenticated-header/div/div[3]/ul[2]/li[2]/a"));
 
@@ -40,6 +39,14 @@ public class UTestLoginPage extends PageObject {
     public static final Target NEXT_LOCATION_BUTTON = Target.
             the("where do we accept data already entered").
             located(By.xpath("//*[@class=\"btn btn-blue\"]/span"));
+
+    public static final Target CITY_SELECTION = Target.
+            the("where do we choose the city").
+            located(By.xpath("//*[@id=\"city\"]"));
+
+    public static final Target ZIP_CODE = Target.
+            the("where do we write the ZIP code").
+            located(By.xpath("//*[@id=\"zip\"]"));
 
     public static final Target NEXT_DEVICES_BUTTON = Target.
             the("where do we accept data already entered").
